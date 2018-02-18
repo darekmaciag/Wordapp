@@ -1,0 +1,70 @@
+button {
+    -webkit-transition-duration: 0.1s;
+    /* Safari */
+    transition-duration: 0.1s;
+    background-color: #F4595B;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  button:hover {
+    background-color: #FF7375;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  button:active {
+    background-color: #C24648;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #C24648;
+    color: #CCC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .inputMain .header input {
+    padding: 13px;
+    font-size: 20px;
+    border: 1px solid #000;
+    width: 305px;
+    margin-bottom: 100px;
+  }
+
+  h1{
+    background-color: rgb(19, 43, 177);
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid rgb(9, 10, 58);
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
