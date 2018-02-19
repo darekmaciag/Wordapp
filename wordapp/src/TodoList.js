@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import TodoItems from "./TodoItems";
-import "./TodoList.css";
+import React, { Component } from 'react';
+import TodoItems from './TodoItems';
+import './TodoList.css';
 import phrases from './phrases.json';
-import input from "./Input";
+import input from './Input';
 
 class TodoList extends Component {
 
@@ -10,7 +10,7 @@ class TodoList extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            items: []
+            items: phrases
           };
      
         this.addItem = this.addItem.bind(this);
@@ -20,8 +20,8 @@ class TodoList extends Component {
       addItem(e) {
         var itemArray = this.state.items;
        
-        if (this._inputPlword.value !== "" && this._inputEnword.value !== "") {
-          itemArray.unshift({
+        if (this._inputPlword.value !== '' && this._inputEnword.value !== '') {
+          itemArray.push({
               plword: this._inputPlword.value,
               enword: this._inputEnword.value,
               key: Date.now()
@@ -31,8 +31,8 @@ class TodoList extends Component {
             items: itemArray
           });
        
-          this._inputPlword.value = "";
-          this._inputEnword.value = "";
+          this._inputPlword.value = '';
+          this._inputEnword.value = '';
         }
        
         console.log(itemArray);
@@ -56,10 +56,10 @@ class TodoList extends Component {
       <div className="todoListMain">
         <div className="header">
           <form  onSubmit={this.addItem}>
-          <input ref={(a) => this._inputPlword = a} 
+          <input ref={(a) => this._inputPlword = a}
                   placeholder="pl Word">
           </input>
-          <input ref={(b) => this._inputEnword = b} 
+          <input ref={(b) => this._inputEnword = b}
                   placeholder="pl Word">
           </input>
 
