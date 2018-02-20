@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Input.css';
 import phrases from './phrases.json';
+import TodoList from './TodoList';
+import TodoItems from './TodoItems';
 
 class Input extends React.Component {
  constructor(props, context) {
@@ -22,7 +24,7 @@ class Input extends React.Component {
         this._inputWord.value = '';
       }
     
-      console.log(word.length);
+      console.log();
        
       e.preventDefault();
     }
@@ -44,9 +46,6 @@ class Input extends React.Component {
       </div>
       );
     }
-  
-
-  
   }
 
   export default Input;
